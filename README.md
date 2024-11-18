@@ -1,1 +1,1 @@
-.
+# Kalkulator Kode Warna Resistor 
