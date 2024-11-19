@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav> 
-        <div class="">
+        <div class="logo">
             <a href="#home"><img src="/../project alpro/logo.png" alt="my-avatar"></a>
         </div>
         <ul>
@@ -16,5 +16,86 @@
             <li><a href="#about">About</a></li>
         </ul>
     </nav>
+    <main>
+        <section class="section1">
+            <h1>Kalkulator Resistor 4 Gelang</h1>
+            
+            <div class="resistor">
+                <div class="gelang" id="gelang1"></div>
+                <div class="gelang" id="gelang2"></div>
+                <div class="gelang" id="gelang3"></div>
+                <div class="gelang" id="gelang4"></div>
+            </div>
+    
+            <div class="select-container">
+                <div>
+                    <label for="warna1">Gelang 1:</label>
+                    <select id="warna1" onchange="calculateResistance()">
+                        <option value="hitam">Hitam</option>
+                        <option value="coklat">Coklat</option>
+                        <option value="merah">Merah</option>
+                        <option value="oranye">Oranye</option>
+                        <option value="kuning">Kuning</option>
+                        <option value="hijau">Hijau</option>
+                        <option value="biru">Biru</option>
+                        <option value="ungu">Ungu</option>
+                        <option value="abu-abu">Abu-abu</option>
+                        <option value="putih">Putih</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="warna2">Gelang 2:</label>
+                    <select id="warna2" onchange="calculateResistance()">
+                        <option value="hitam">Hitam</option>
+                        <option value="coklat">Coklat</option>
+                        <option value="merah">Merah</option>
+                        <option value="oranye">Oranye</option>
+                        <option value="kuning">Kuning</option>
+                        <option value="hijau">Hijau</option>
+                        <option value="biru">Biru</option>
+                        <option value="ungu">Ungu</option>
+                        <option value="gray">Abu-abu</option>
+                        <option value="white">Putih</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="warna3">Gelang 3 (Pengali):</label>
+                    <select id="warna3" onchange="calculateResistance()">
+                        <option value="hitam">Hitam</option>
+                        <option value="coklat">Coklat</option>
+                        <option value="merah">Merah</option>
+                        <option value="oranye">Oranye</option>
+                        <option value="kuning">Kuning</option>
+                        <option value="hijau">Hijau</option>
+                        <option value="biru">Biru</option>
+                        <option value="ungu">Ungu</option>
+                        <option value="emas">Emas</option>
+                        <option value="perak">Perak</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="warna4">Gelang 4 (Toleransi):</label>
+                    <select id="warna4" onchange="calculateResistance()">
+                        <option value="coklat">Coklat (±1%)</option>
+                        <option value="merah">Merah (±2%)</option>
+                        <option value="hijau">Hijau (±0.5%)</option>
+                        <option value="biru">Biru (±0.25%)</option>
+                        <option value="ungu">Ungu (±0.1%)</option>
+                        <option value="gray">Abu-abu (±0.05%)</option>
+                        <option value="emas">Emas (±5%)</option>
+                        <option value="perak">Perak (±10%)</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="hasil">
+                <h2>Hasil Perhitungan:</h2>
+                <p id="resistanceValue">0 Ω ± 0%</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

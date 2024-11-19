@@ -41,3 +41,7 @@ nav ul li a:hover {
   border-bottom: 1px solid #FFD3B6;
   color: #FFD3B6;
 }
+
+section {
+  padding: 30px;
+}
