@@ -25,174 +25,100 @@
     </nav>
     <!--HOME-->
     <main>
-      <section id="home" class="section1">
+      <section id="home" class="main1">
+      <div class="kalkulator">
         <h1>Kalkulator Resistor 4 Gelang</h1>
-
+        
         <div class="resistor">
-          <div class="gelang" id="gelang1"></div>
-          <div class="gelang" id="gelang2"></div>
-          <div class="gelang" id="gelang3"></div>
-          <div class="gelang" id="gelang4"></div>
+            <div class="gelang" id="gelang1"></div>
+            <div class="gelang" id="gelang2"></div>
+            <div class="gelang" id="gelang3"></div>
+            <div class="gelang" id="gelang4"></div>
         </div>
 
-        <div class="select-container">
-          <div>
-            <label for="warna1">Gelang 1:</label>
-            <select id="warna1" onchange="calculateResistance()">
-              <option value="hitam">Hitam</option>
-              <option value="coklat">Coklat</option>
-              <option value="merah">Merah</option>
-              <option value="oranye">Oranye</option>
-              <option value="kuning">Kuning</option>
-              <option value="hijau">Hijau</option>
-              <option value="biru">Biru</option>
-              <option value="ungu">Ungu</option>
-              <option value="abu-abu">Abu-abu</option>
-              <option value="putih">Putih</option>
-            </select>
-          </div>
+        <div class="pilih-resistor">
+            <div>
+                <label for="warna1">Gelang 1:</label>
+                <select id="warna1" onchange="calculateResistance()">
+                    <option value="hitam">Hitam</option>
+                    <option value="coklat">Coklat</option>
+                    <option value="merah">Merah</option>
+                    <option value="oranye">Oranye</option>
+                    <option value="kuning">Kuning</option>
+                    <option value="hijau">Hijau</option>
+                    <option value="biru">Biru</option>
+                    <option value="ungu">Ungu</option>
+                    <option value="abu-abu">Abu-abu</option>
+                    <option value="putih">Putih</option>
+                </select>
+            </div>
 
-          <div>
-            <label for="warna2">Gelang 2:</label>
-            <select id="warna2" onchange="calculateResistance()">
-              <option value="hitam">Hitam</option>
-              <option value="coklat">Coklat</option>
-              <option value="merah">Merah</option>
-              <option value="oranye">Oranye</option>
-              <option value="kuning">Kuning</option>
-              <option value="hijau">Hijau</option>
-              <option value="biru">Biru</option>
-              <option value="ungu">Ungu</option>
-              <option value="gray">Abu-abu</option>
-              <option value="white">Putih</option>
-            </select>
-          </div>
+            <div>
+                <label for="warna2">Gelang 2:</label>
+                <select id="warna2" onchange="calculateResistance()">
+                    <option value="hitam">Hitam</option>
+                    <option value="coklat">Coklat</option>
+                    <option value="merah">Merah</option>
+                    <option value="oranye">Oranye</option>
+                    <option value="kuning">Kuning</option>
+                    <option value="hijau">Hijau</option>
+                    <option value="biru">Biru</option>
+                    <option value="ungu">Ungu</option>
+                    <option value="abu-abu">Abu-abu</option>
+                    <option value="putih">Putih</option>
+                </select>
+            </div>
 
-          <div>
-            <label for="warna3">Gelang 3 (Pengali):</label>
-            <select id="warna3" onchange="calculateResistance()">
-              <option value="hitam">Hitam</option>
-              <option value="coklat">Coklat</option>
-              <option value="merah">Merah</option>
-              <option value="oranye">Oranye</option>
-              <option value="kuning">Kuning</option>
-              <option value="hijau">Hijau</option>
-              <option value="biru">Biru</option>
-              <option value="ungu">Ungu</option>
-              <option value="emas">Emas</option>
-              <option value="perak">Perak</option>
-            </select>
-          </div>
+            <div>
+                <label for="warna3">Gelang 3 (Pengali):</label>
+                <select id="warna3" onchange="calculateResistance()">
+                    <option value="hitam">Hitam</option>
+                    <option value="coklat">Coklat</option>
+                    <option value="merah">Merah</option>
+                    <option value="oranye">Oranye</option>
+                    <option value="kuning">Kuning</option>
+                    <option value="hijau">Hijau</option>
+                    <option value="biru">Biru</option>
+                    <option value="ungu">Ungu</option>
+                    <option value="emas">Emas</option>
+                    <option value="perak">Perak</option>
+                </select>
+            </div>
 
-          <div>
-            <label for="warna4">Gelang 4 (Toleransi):</label>
-            <select id="warna4" onchange="calculateResistance()">
-              <option value="coklat">Coklat (±1%)</option>
-              <option value="merah">Merah (±2%)</option>
-              <option value="hijau">Hijau (±0.5%)</option>
-              <option value="biru">Biru (±0.25%)</option>
-              <option value="ungu">Ungu (±0.1%)</option>
-              <option value="gray">Abu-abu (±0.05%)</option>
-              <option value="emas">Emas (±5%)</option>
-              <option value="perak">Perak (±10%)</option>
-            </select>
-          </div>
+            <div>
+                <label for="warna4">Gelang 4 (Toleransi):</label>
+                <select id="warna4" onchange="calculateResistance()">
+                    <option value="coklat">Coklat (±1%)</option>
+                    <option value="merah">Merah (±2%)</option>
+                    <option value="hijau">Hijau (±0.5%)</option>
+                    <option value="biru">Biru (±0.25%)</option>
+                    <option value="ungu">Ungu (±0.1%)</option>
+                    <option value="abu-abu">Abu-abu (±0.05%)</option>
+                    <option value="emas">Emas (±5%)</option>
+                    <option value="perak">Perak (±10%)</option>
+                </select>
+            </div>
         </div>
 
         <div class="hasil">
-          <h2>Hasil Perhitungan:</h2>
-          <p id="resistanceValue">0 Ω ± 0%</p>
+            <h2>Hasil Perhitungan:</h2>
+            <p id="nilai">0 Ω ± 0%</p>
         </div>
-        <div class="keterangan">
-            <h1>Kalkulator warna resistor</h1>
-            <p>Kalkulator warna resistor adalah alat yang digunakan untuk menghitung nilai hambatan (Ω) berdasarkan beberapa warna yang tertera. Warna tersebut diinterpretasikan berupa gelang atau pita warna yang memiliki nilai resitansi, pengali, dan toleransi.</p>
-            <h1>Panduan dalam memakai kalkulator warna resistor</h1>
-            <p>1. Pilih salah satu warna (bebas) pada setiap masing-masing pita.</p>
-            <p>2. Setelah memilih warna pada setiap pita, tekan tombol 'kalkulasi'.</p>
-            <p>3. Nilai hambatan (Ω) akan muncul pada layar.</p>
-            <h1>Kode warna resistor</h1>
-            <h3>Pita warna pertama:</h3>
-            <p style="color:black">Hitam</p>
-            <p style="color:brown">Coklat</p>
-            <p style="color:red">Merah</p>
-            <p style="color:orangered">Oranye</p>
-            <p style="color:yellow">Kuning</p>
-            <p>Hijau</p>
-            <p>Biru</p>
-            <p>Ungu</p>
-            <p>Abu</p>
-            <p>Putih</p>
-            <br>
-            <h3>Pita warna kedua:</h3>
-            <p>Hitam</p>
-            <p>Coklat</p>
-            <p>Merah</p>
-            <p>Oranye</p>
-            <p>Kuning</p>
-            <p>Hijau</p>
-            <p>Biru</p>
-            <p>Ungu</p>
-            <p>Abu</p>
-            <p>Putih</p>
-            <br>
-            <h3>Pita warna ketiga (pengali):</h3>
-            <p>Hitam</p>
-            <p>Coklat</p>
-            <p>Merah</p>
-            <p>Oranye</p>
-            <p>Kuning</p>
-            <p>Hijau</p>
-            <p>Biru</p>
-            <p>Ungu</p>
-            <p>Abu</p>
-            <p>Putih</p>
-            <p>Emas</p>
-            <p>Silver</p>
-            <br>
-            <h3>Pita warna keempat (toleransi):</h3>
-            <p>Coklat</p>
-            <p>Merah</p>
-            <p>Oranye</p>
-            <p>Kuning</p>
-            <p>Hijau</p>
-            <p>Biru</p>
-            <p>Ungu</p>
-            <p>Abu</p>
-            <p>Emas</p>
-            <p>Silver</p>
-            <br>
-            <h2>Kalkulasi</h2>
-        </div>
-      </section>
+       </section>
+    </div>
+    <!--PENGERTIAN-->
+    <section class="main2">
+      <div class="kalkulator">
+        <h1>Pengertian</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A numquam, fugiat doloribus blanditiis, quisquam repellendus autem dolore ullam vitae cupiditate eaque, ipsum perspiciatis perferendis nostrum illo molestiae sequi qui accusamus!</p>
+      </div>
+    </section>
       <!--ABOUT-->
-      <section id="about">
-        <h1>ABOUT</h1>
-        <h3>Tujuan Dibuatnya Web Kalkulator Waarna Resistor</h3>
-        <p1>Dengan adanya web ini bertuujuan agar dapat dengan mudah</p1>
-        <p1
-          >mengidentifikasi nilai resistif resistor dan toleransi persentase</p1
-        >
-        <h3>Apasih Manfaat dari Mnemahami Kode Warna Resistor</h3>
-        <p1
-          >Bagi kita yang tidak bisa lepas dari rangkian elektronika, memahami
-          dan mengetahui kode warna</p1
-        >
-        <p1
-          >resistor sangatlah penting, karena jika kita salah dalam membaca
-          nilai resistansi dapat mengakibatkan</p1
-        >
-        <p1
-          >rangkaian yang kita buat tidak berfungsi atau bahkan kerusakan
-          komponen lainnya.</p1
-        >
-        <p1
-          >Gamau dong kalau kita udah effort buat rangkaian lalu rusak hannya
-          karena kita salah membaca kode nilai toleransinya</p1
-        >
-        <p1
-          >Maka dari itu dengan latihan yang cukup, membaca kode warna resistor
-          bisa menjadi keterampilan yang mudah dan cepat.</p1
-        >
+      <section id="about" class="main2">
+        <div class="kalkulator">
+          <h1>About</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, perspiciatis? Pariatur repellat eos, repellendus esse, velit aperiam, ab rerum odit iusto laborum a. Magni illo perferendis maiores aspernatur architecto esse quis sapiente rem vel repudiandae soluta, ipsa facere veritatis ullam neque adipisci, ex molestiae corrupti a. Rerum sint illo eaque iste laboriosam doloribus maxime alias possimus quis, illum dolorem cum!</p>
+        </div>
       </section>
     </main>
     <!--FOOTER-->
@@ -233,6 +159,7 @@
         >
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  
     </footer>
   </body>
 </html>

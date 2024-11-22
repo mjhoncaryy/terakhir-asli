@@ -3,10 +3,10 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar{
   display: none;
-  scroll-padding-top: 60px;
 }
 nav {
   background-color: #27293c;
@@ -16,10 +16,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -53,9 +52,6 @@ nav ul li a:hover {
   color: #FFD3B6;
 }
 
-section {
-  padding: 30px;
-}
  /* Footer styles */
  .footer {
   background-color: #27293c;
@@ -218,4 +214,81 @@ section {
   .footer-logo {
     font-size: 1.5rem;
   }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+
+.kalkulator {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main1 {
+  padding: 55px 30px 10px 30px;
+}
+.main2 {
+  padding: 10px 30px 10px 30px;
+}
+
+.resistor {
+  width: 400px;
+  height: 100px;
+  background-color: beige;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4a373;
+  border-radius: 10px;
+}
+
+.gelang {
+  width: 30px;
+  height: 80px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.pilih-resistor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.hasil {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.hasil h2 {
+  margin: 0;
+  color: #27293c;
+}
+
+.hasil p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+h1, h2 {
+  color: #27293c;
+}
+p {
+  font-size: 14px;
 }
