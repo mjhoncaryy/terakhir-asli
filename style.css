@@ -1,9 +1,14 @@
 *,
-html {
+html, main {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  background-color: #f0f0f0;
 }
 body::-webkit-scrollbar{
   display: none;
@@ -214,11 +219,6 @@ nav ul li a:hover {
   .footer-logo {
     font-size: 1.5rem;
   }
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  background-color: #f0f0f0;
 }
 
 .kalkulator {
