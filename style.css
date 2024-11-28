@@ -16,18 +16,29 @@ body::-webkit-scrollbar{
 }
 h1, h2, h3, p {
   color: #27293c;
+  opacity: 85%;
+}
+span {
+  color: #e9695d;
 }
 p {
   font-size: 17px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.5px;
   line-height: 1.4;
-  opacity: 90%;
 }
 h1 {
   font-family: "PT Serif", serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 30px;
+}
+h2 {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 37px;
+  margin-bottom: 10px;
 }
 h3 {
   font-family: "PT Serif", serif;
@@ -249,7 +260,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d4a373;
+  background-color: #ddc3aa;
   border-radius: 10px;
 }
 .gelang {
@@ -277,10 +288,6 @@ select {
   background-color: #f8f9fa;
   border-radius: 5px;
 }
-.hasil h2 {
-  margin: 0;
-  color: #27293c;
-}
 .hasil p {
   font-size: 1.2em;
   margin: 10px 0;
@@ -298,7 +305,7 @@ th, td {
   text-align: left;
 }
 th {
-  background-color: #2c5c9c;
+  background-color: #45496a;
   color: white;
 }
 tr:nth-child(even) {
@@ -327,3 +334,30 @@ tr:hover {
 .white { background-color: white; }
 .gold { background-color: gold; }
 .silver { background-color: silver; }
+
+
+/*ABOUT*/
+.tujuan {
+  display: flex;
+}
+.tujuan .teks-tujuan {
+  margin-right: 60px;
+  
+}
+.gambar-tujuan img {
+  width: 25rem;
+  height: 25rem;
+}
+.manfaat {
+  display: flex;
+}
+.manfaat .teks-manfaat {
+  margin-left: 60px;
+}
+.gambar-manfaat {
+  order: -1;
+}
+.gambar-manfaat img {
+  width: 25rem;
+  height: 25rem;
+}
