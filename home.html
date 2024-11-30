@@ -32,83 +32,89 @@
     <!--HOME-->
     <main>
       <section id="home" class="main1">
-      <div class="kalkulator">
-        <h1>Kalkulator Resistor 4 Gelang</h1>
-        <hr>
-        <div class="resistor">
-            <div class="gelang" id="gelang1"></div>
-            <div class="gelang" id="gelang2"></div>
-            <div class="gelang" id="gelang3"></div>
-            <div class="gelang" id="gelang4"></div>
+        <div class="kalkulator">
+          <h1>Kalkulator Resistor 4 Gelang</h1>
+          
+          <div class="resistor">
+              <div class="gelang gelang1"></div>
+              <div class="gelang gelang2"></div>
+              <div class="gelang gelang3"></div>
+              <div class="gelang gelang4"></div>
+          </div>
+  
+          <div class="pilih-resistor">
+              <div>
+                  <label>Gelang 1:</label>
+                  <select id="gelang1-select">
+                      <option value="#ebdbcb">Pilih Gelang Pertama</option>
+                      <option value="black">Hitam</option>
+                      <option value="brown">Coklat</option>
+                      <option value="red">Merah</option>
+                      <option value="orange">Oranye</option>
+                      <option value="yellow">Kuning</option>
+                      <option value="green">Hijau</option>
+                      <option value="blue">Biru</option>
+                      <option value="violet">Ungu</option>
+                      <option value="gray">Abu-abu</option>
+                      <option value="white">Putih</option>
+                  </select>
+              </div>
+  
+              <div>
+                  <label>Gelang 2:</label>
+                  <select id="gelang2-select">
+                      <option value="#ebdbcb">Pilih Gelang Kedua</option>
+                      <option value="black">Hitam</option>
+                      <option value="brown">Coklat</option>
+                      <option value="red">Merah</option>
+                      <option value="orange">Oranye</option>
+                      <option value="yellow">Kuning</option>
+                      <option value="green">Hijau</option>
+                      <option value="blue">Biru</option>
+                      <option value="violet">Ungu</option>
+                      <option value="gray">Abu-abu</option>
+                      <option value="white">Putih</option>
+                  </select>
+              </div>
+  
+              <div>
+                  <label>Gelang 3:</label>
+                  <select id="gelang3-select">
+                      <option value="#ebdbcb">Pilih Gelang Ketiga (Pengali)</option>
+                      <option value="black">Hitam</option>
+                      <option value="brown">Coklat</option>
+                      <option value="red">Merah</option>
+                      <option value="orange">Oranye</option>
+                      <option value="yellow">Kuning</option>
+                      <option value="green">Hijau</option>
+                      <option value="blue">Biru</option>
+                      <option value="violet">Ungu</option>
+                      <option value="gray">Abu-abu</option>
+                      <option value="white">Putih</option>
+                  </select>
+              </div>
+  
+              <div>
+                  <label>Gelang 4:</label>
+                  <select id="gelang4-select">
+                      <option value="#ebdbcb">Pilih Gelang Keempat (Toleransi)</option>
+                      <option value="brown">Coklat (±1%)</option>
+                      <option value="red">Merah (±2%)</option>
+                      <option value="green">Hijau (±0.5%)</option>
+                      <option value="blue">Biru (±0.25%)</option>
+                      <option value="violet">Ungu (±0.1%)</option>
+                      <option value="gray">Abu-abu (±0.05%)</option>
+                      <option value="gold">Emas (±5%)</option>
+                      <option value="silver">Perak (±10%)</option>
+                  </select>
+              </div>
+          </div>
+          <div class="tombol">
+            <button id="calculate-btn">Hitung Resistansi</button>
+          </div>
+        <div id="result">
+          <h1 id="hasilResistor"></h1>
         </div>
-
-        <div class="pilih-resistor">
-            <div>
-                <label for="warna1">Gelang 1:</label>
-                <select id="warna1" onchange="calculateResistance()">
-                    <option value="hitam">Hitam</option>
-                    <option value="coklat">Coklat</option>
-                    <option value="merah">Merah</option>
-                    <option value="oranye">Oranye</option>
-                    <option value="kuning">Kuning</option>
-                    <option value="hijau">Hijau</option>
-                    <option value="biru">Biru</option>
-                    <option value="ungu">Ungu</option>
-                    <option value="abu-abu">Abu-abu</option>
-                    <option value="putih">Putih</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="warna2">Gelang 2:</label>
-                <select id="warna2" onchange="calculateResistance()">
-                    <option value="hitam">Hitam</option>
-                    <option value="coklat">Coklat</option>
-                    <option value="merah">Merah</option>
-                    <option value="oranye">Oranye</option>
-                    <option value="kuning">Kuning</option>
-                    <option value="hijau">Hijau</option>
-                    <option value="biru">Biru</option>
-                    <option value="ungu">Ungu</option>
-                    <option value="abu-abu">Abu-abu</option>
-                    <option value="putih">Putih</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="warna3">Gelang 3 (Pengali):</label>
-                <select id="warna3" onchange="calculateResistance()">
-                    <option value="hitam">Hitam</option>
-                    <option value="coklat">Coklat</option>
-                    <option value="merah">Merah</option>
-                    <option value="oranye">Oranye</option>
-                    <option value="kuning">Kuning</option>
-                    <option value="hijau">Hijau</option>
-                    <option value="biru">Biru</option>
-                    <option value="ungu">Ungu</option>
-                    <option value="emas">Emas</option>
-                    <option value="perak">Perak</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="warna4">Gelang 4 (Toleransi):</label>
-                <select id="warna4" onchange="calculateResistance()">
-                    <option value="coklat">Coklat (±1%)</option>
-                    <option value="merah">Merah (±2%)</option>
-                    <option value="hijau">Hijau (±0.5%)</option>
-                    <option value="biru">Biru (±0.25%)</option>
-                    <option value="ungu">Ungu (±0.1%)</option>
-                    <option value="abu-abu">Abu-abu (±0.05%)</option>
-                    <option value="emas">Emas (±5%)</option>
-                    <option value="perak">Perak (±10%)</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="hasil">
-            <h1>Hasil Perhitungan:</h1>
-            <p id="nilai">0 Ω ± 0%</p>
         </div>
        </section>
     </div>
@@ -272,7 +278,7 @@
         >
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-  
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
