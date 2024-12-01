@@ -400,17 +400,28 @@ tr:hover {
 .tujuan {
   display: flex;
 }
+.tujuan h2 {
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-size: 2.5rem;
+
+}
 .tujuan .teks-tujuan {
-  margin-right: 70px;
-  margin-left: 40px;
+  margin-right: 100px;
 }
 .gambar-tujuan img {
   margin-right: 30px;
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
 }
 .manfaat {
   display: flex;
+}
+.manfaat h2 {
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
 }
 .manfaat .teks-manfaat {
   margin-left: 70px;
@@ -420,6 +431,103 @@ tr:hover {
   order: -1;
 }
 .gambar-manfaat img {
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
 }
+
+/* CARD */ 
+.about-card {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+/* From Uiverse.io by alexruix */ 
+.card {
+  width: 250px;
+  height: 304px;
+  background: #f5f5f5;
+  padding: 2rem 1.5rem;
+  transition: box-shadow .3s ease, transform .2s ease;
+  border-radius: 10px;
+ }
+ 
+ .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform .2s ease, opacity .2s ease;
+ }
+ 
+ /*Image*/
+ .card-avatar {
+  --size: 60px;
+  background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform .2s ease;
+  margin-bottom: 1rem;
+ }
+ 
+ 
+ /*Card footer*/
+ .card-social {
+  transform: translateY(200%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  opacity: 0;
+  transition: transform .2s ease, opacity .2s ease;
+ }
+ 
+ .card-social__item {
+  list-style: none;
+ }
+ 
+ .card-social__item svg {
+  display: block;
+  height: 25px;
+  width: 25px;
+  fill: #515F65;
+  cursor: pointer;
+  transition: fill 0.2s ease ,transform 0.2s ease;
+ }
+ 
+ /*Text*/
+ .card-title {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+ }
+ 
+ .card-subtitle p {
+  color: #5b5f61;
+  font-size: 0.9em;
+  margin-top: 5px;
+  letter-spacing: 2px;
+ }
+ 
+ /*Hover*/
+ .card:hover {
+  box-shadow: 0 8px 50px #23232333;
+ }
+ 
+ .card:hover .card-info {
+  transform: translateY(-5%);
+ }
+ 
+ .card:hover .card-social {
+  transform: translateY(100%);
+  opacity: 1;
+ }
+ 
+ .card-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+ }
+ 
+ .card-avatar:hover {
+  transform: scale(1.1);
+ }
