@@ -55,6 +55,10 @@ hr {
   margin-bottom: 20px;
   opacity: 40%;
 }
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /*NAVBAR*/
 nav {
@@ -66,6 +70,20 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1000;
+}
+.logo {
+  display: flex;
+}
+.logo a h2 {
+  margin: 7px 0 0 20px;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.logo a h2:hover {
+  opacity: 70%;
 }
 nav ul {
   display: flex;
@@ -402,7 +420,6 @@ tr:hover {
   display: flex;
 }
 .tujuan h2 {
-  float: left;
   margin-right: 20px;
   margin-top: 5px;
   font-size: 2.5rem;
@@ -421,7 +438,6 @@ tr:hover {
   display: flex;
 }
 .manfaat h2 {
-  float: left;
   margin-right: 20px;
   margin-top: 5px;
 }
@@ -534,4 +550,18 @@ tr:hover {
  .card-avatar:hover {
   transform: scale(1.1);
  }
- 
+
+/*Animasi*/
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  } to {
+    opacity: 1;
+    transform: translateY() scale(1);
+  }
+}
