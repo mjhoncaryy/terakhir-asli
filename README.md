@@ -47,19 +47,22 @@ Dalam pengembangan website kalkulator warna resistor ini, kami menggunakan beber
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
+## Fitur
+* Menghitung Nilai Resistansi Resistor
+* Menampilkan Nilai Toleransi Resistor
+* Tujuan dan Manfaat Website
+* Kontak Pembuat Website
+
 <!-- GETTING STARTED -->
-## Getting Started
+## Instalasi
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Langkah-langkah untuk menginstall program ini secara lokal
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Clone
   ```sh
-  npm install npm@latest -g
+  git clone https://github.com/mjhoncaryy/alpro_asik.git
   ```
+  
 
 ### Installation
 
