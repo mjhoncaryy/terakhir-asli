@@ -41,7 +41,7 @@ Langkah-langkah untuk menginstall program ini secara lokal
   ```
 <!-- USAGE EXAMPLES -->
 ## Usage
-Penggunaan dari Website ini cukup mudah, caranya:
+Berikut panduan cara menggunakan website:
 1. Pilih warna gelang pertama sampai gelang keempat.
 2. Klik tombol "Hhitung Resistansi".
 3. Nilai resistansi beserta nilai toleransi akan muncul.
