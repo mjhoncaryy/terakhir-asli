@@ -10,11 +10,9 @@
   <h3 align="center"><strong>Decode Resistance Instantly</strong></h3>
 </div>
 <!-- ABOUT THE PROJECT -->
-## About the Project
-<div>
+## About This Project
 <img src="website.png" alt="website-screenshoot"></img>
-</div>
-Website yang membantu pengguna dalam perhitungan nilai resistor 4 gelang dengan mudah dan akurat.
+Kalkulator Warna Resistor 4 Gelang adalah sebuah alat online yang berguna bagi para teknisi maupun non-teknisi untuk mengidentifikasi nilai resistansi suatu resistor. Website ini menyajikan antarmuka yang sederhana dan intuitif, membuat pengguna mudah untuk menentukan nilai resistansi dan toleransi hanya dengan mencocokkan warna-warna tertentu pada resistor. Tujuan utama dari website ini adalah mempermudah proses pembacaan kode warna resistor yang seringkali membingungkan, terutama bagi pemula di bidang elektronika. Dengan fitur interaktif yang memungkinkan pengguna memilih warna gelang secara manual atau menggunakan panduan visual.
 
 ## Built With
 Dalam pengembangan website kalkulator warna resistor ini, kami menggunakan beberapa bahasa pemrograman, yaitu:
