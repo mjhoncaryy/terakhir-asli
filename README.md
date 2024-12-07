@@ -10,13 +10,13 @@
   <h3 align="center"><strong>Decode Resistance Instantly</strong></h3>
 </div>
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About the Project
 <div>
 <img src="website.png" alt="website-screenshoot"></img>
 </div>
 Website yang membantu pengguna dalam perhitungan nilai resistor 4 gelang dengan mudah dan akurat.
 
-### Built With
+## Built With
 Dalam pengembangan website kalkulator warna resistor ini, kami menggunakan beberapa bahasa pemrograman, yaitu:
 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
