@@ -29,14 +29,8 @@
   <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/mjhoncaryy/terakhir-asli/blob/main/logo.png)">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">Resiscolor</h3>
-
-  <p align="center">
-    <br/>
-    <p><strong>Decode Resistance Instantly</strong></p>
-    <br />
-  </p>
+  <h1 align="center">Resiscolor</h1>
+  <h3 align="center"><strong>Decode Resistance Instantly</strong></h3>
 </div>
 
 
