@@ -19,7 +19,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][https://github.com/mjhoncaryy/terakhir-asli/graphs/contributors]
-[![MIT License][license-shield]](https://img.shields.io/badge/license-MIT-blue)
+[![MIT License][license-shield]][https://img.shields.io/badge/license-MIT-blue]
 
 
 
