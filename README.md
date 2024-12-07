@@ -31,7 +31,6 @@ Dalam pengembangan website kalkulator warna resistor ini, kami menggunakan beber
 
 <!-- GETTING STARTED -->
 ## Installation
-
 Langkah-langkah untuk menginstall program ini secara lokal
 
 1. Pilih folder yang akan menjadi repository program. 
@@ -48,8 +47,7 @@ Berikut panduan cara menggunakan website:
 <!-- LICENSE -->
 ## License
 Proyek ini dikembangkan dibawah lisensi MIT. Lihat `LICENSE` untuk info lebih lanjut.
-
 <!-- CONTACT -->
 ## Contact
-Team Resiscolor - timresiscolor@gmail.com
-Project Link: [https://github.com/mjhoncaryy/terakhir-asli](https://github.com/mjhoncaryy/terakhir-asli)
+* Team Resiscolor - timresiscolor@gmail.com
+* Project Link: [https://github.com/mjhoncaryy/terakhir-asli](https://github.com/mjhoncaryy/terakhir-asli)
