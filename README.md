@@ -41,7 +41,10 @@ Langkah-langkah untuk menginstall program ini secara lokal
   ```
 <!-- USAGE EXAMPLES -->
 ## Usage
-Website ini dapat anda gunakan langsung setelah anda telah selesai menginstall program.
+Penggunaan dari Website ini cukup mudah, caranya:
+1. Pilih warna gelang pertama sampai gelang keempat.
+2. Klik tombol "Hhitung Resistansi".
+3. Nilai resistansi beserta nilai toleransi akan muncul.
 <!-- LICENSE -->
 ## License
 Proyek ini dikembangkan dibawah lisensi MIT. Lihat `LICENSE` untuk info lebih lanjut.
