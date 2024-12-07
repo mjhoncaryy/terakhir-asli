@@ -41,20 +41,12 @@ Langkah-langkah untuk menginstall program ini secara lokal
   ```
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Website ini dapat anda gunakan langsung setelah anda telah selesai menginstall program.
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Proyek ini dikembangkan dibawah lisensi MIT. Lihat `LICENSE` untuk info lebih lanjut.
 
 <!-- CONTACT -->
 ## Contact
-
 Team Resiscolor - timresiscolor@gmail.com
 Project Link: [https://github.com/mjhoncaryy/terakhir-asli](https://github.com/mjhoncaryy/terakhir-asli)
