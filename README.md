@@ -9,6 +9,7 @@
   <h1 align="center">Resiscolor</h1>
   <h3 align="center"><strong>Decode Resistance Instantly</strong></h3>
 </div>
+
 <!-- ABOUT THE PROJECT -->
 ## About This Project
 <img src="website.png" alt="website-screenshoot"></img>
