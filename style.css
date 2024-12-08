@@ -539,24 +539,50 @@ tr:hover {
  .card:hover {
   box-shadow: 0 8px 50px #23232333;
  }
- 
  .card:hover .card-info {
   transform: translateY(-5%);
  }
- 
  .card:hover .card-social {
   transform: translateY(100%);
   opacity: 1;
  }
- 
  .card-social__item svg:hover {
   fill: #232323;
   transform: scale(1.1);
  }
- 
  .card-avatar:hover {
   transform: scale(1.1);
  }
+.slogan {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.slogan h1 {
+  color: rgb(51,53,55);
+  font-size: 6rem;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: normal;
+}
+.slogan-kutip {
+  font-size: 8rem;
+}
+.slogan-text1 {
+  margin-right: 4rem;
+}
+.slogan-text2 {
+  margin-right: 4rem;
+}
+
+.slogan-text3 {
+  margin-right: 1rem;
+}
+.slogan-text4 {
+  margin-left: 20rem;
+}
 
 /*Animasi*/
 .autoShow {
@@ -570,6 +596,17 @@ tr:hover {
   } to {
     opacity: 1;
     transform: translateY() scale(1);
+  }
+}
+.autoBlur {
+  animation: autoBlurAnimation both;
+  animation-timeline: view(70% auto);
+}
+@keyframes autoBlurAnimation {
+  from {
+    filter: blur(20px);
+  } to {
+    filter: blur(0);
   }
 }
 
