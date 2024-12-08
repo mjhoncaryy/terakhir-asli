@@ -115,6 +115,11 @@ nav ul li a:hover {
   border-bottom: 1px solid #ffd3b6;
   color: #ffd3b6;
 }
+nav .logo span {
+  background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(240,45,253,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /*FOOTER*/
 .footer {
@@ -264,6 +269,7 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
   justify-content: center;
+  
 }
 .tombol {
   text-align: center;
@@ -278,7 +284,6 @@ nav ul li a:hover {
   padding: 10px 50px 10px 50px;
 }
 .resistor {
-  width: 400px;
   height: 100px;
   background-color: beige;
   margin: 20px auto;
@@ -287,6 +292,8 @@ nav ul li a:hover {
   align-items: center;
   background-color: #ebdbcb;
   border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
 }
 .gelang {
   width: 30px;
@@ -600,5 +607,150 @@ tr:hover {
     filter: blur(20px);
   } to {
     filter: blur(0);
+  }
+}
+
+/* Responsivitas untuk perangkat tablet */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .main1, .main2 {
+    padding: 20px;
+  }
+
+  .resistor {
+    width: 300px;
+    height: 80px;
+  }
+
+  .pilih-resistor {
+    grid-template-columns: 1fr;
+  }
+
+  .tujuan, .manfaat {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gambar-tujuan img, .gambar-manfaat img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-card {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .tujuan, .manfaat {
+    flex-direction: column; /* Tumpuk kolom */
+    align-items: center;   /* Pusatkan */
+    gap: 20px;             /* Tambahkan jarak antar elemen */
+  }
+
+  .gambar-tujuan img, 
+  .gambar-manfaat img {
+    width: 90%;            /* Gunakan lebar penuh yang sesuai */
+    height: auto;          /* Sesuaikan tinggi secara otomatis */
+  }
+
+  .teks-tujuan, 
+  .teks-manfaat {
+    margin: 0;             /* Hilangkan margin ekstra */
+    text-align: center; 
+}
+.about-card {
+  flex-wrap: wrap;        /* Bungkus elemen yang panjang */
+  justify-content: center;/* Rata tengah semua kartu */
+  gap: 20px;              /* Beri jarak antar kartu */
+}
+
+.card {
+  width: 90%;             /* Gunakan hampir seluruh lebar layar */
+  max-width: 300px;       /* Atur batas lebar */
+}
+}
+
+/* Responsivitas untuk perangkat mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo a h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-logo {
+    font-size: 1.2rem;
+  }
+
+  .kalkulator {
+    padding: 10px;
+  }
+
+  .resistor {
+    width: 250px;
+    height: 70px;
+  }
+
+  .about-card {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .tujuan, .manfaat {
+    flex-direction: column; /* Atur elemen menjadi tumpuk */
+    padding: 10px;          /* Tambahkan jarak dalam */
+  }
+
+  .gambar-tujuan img, 
+  .gambar-manfaat img {
+    display: none;          /* Sesuaikan tinggi otomatis */
+  }
+
+  .teks-tujuan h2, 
+  .teks-manfaat h2 {
+    font-size: 1.8rem;     /* Sesuaikan ukuran font untuk heading */
+  }
+
+  .teks-tujuan p, 
+  .teks-manfaat p {
+    font-size: 1rem;       /* Perkecil ukuran font untuk teks */
+  }
+  .about-card {
+    grid-template-columns: 1fr; /* Tampilkan satu kartu per baris */
+    gap: 15px;                  /* Tambahkan jarak antar kartu */
+  }
+  
+  .card-avatar img {
+    --size: 50px;           /* Perkecil ukuran avatar */
+  }
+  
+  .card-title {
+    font-size: 1.2rem;      /* Perkecil ukuran judul */
+  }
+  
+  .card-subtitle p {
+    font-size: 0.8rem;      /* Perkecil ukuran teks deskripsi */
   }
 }
