@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Warna Resistor</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/33a2970145.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/79619c9ba7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <div class="logo">
+        <a onclick="location.reload()"
+          ><img src="/../project alpro/logo.png" alt="my-avatar"
+        /></a>
+        <a onclick="location.reload()"><h2 style="color: white;">Resis<span>color</span></h2></a>
+      </div>
+      <ul> 
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      
+    </nav>
+    <!--HOME-->
+    <main>
+      <section id="home" class="main1">
+        <div class="kalkulator">
+          <h1>Kalkulator Resistor 4 Gelang</h1>
+          <hr>
+          <div class="resistor">
+              <div class="gelang gelang1"></div>
+              <div class="gelang gelang2"></div>
+              <div class="gelang gelang3"></div>
+              <div class="gelang gelang4"></div>
+          </div>
+  
+          <div class="pilih-resistor">
+              <div>
+                  <label>Gelang 1:</label>
+                  <select id="gelang1-select">
+                      <option value="#ebdbcb">Pilih Gelang Pertama</option>
+                      <option value="black">Hitam</option>
+                      <option value="brown">Coklat</option>
+                      <option value="red">Merah</option>
+                      <option value="orange">Oranye</option>
+                      <option value="yellow">Kuning</option>
+                      <option value="green">Hijau</option>
+                      <option value="blue">Biru</option>
+                      <option value="violet">Ungu</option>
+                      <option value="gray">Abu-abu</option>
+                      <option value="white">Putih</option>
+                  </select>
+              </div>
+  
+              <div>
+                  <label>Gelang 2:</label>
+                  <select id="gelang2-select">
+                      <option value="#ebdbcb">Pilih Gelang Kedua</option>
+                      <option value="black">Hitam</option>
+                      <option value="brown">Coklat</option>
+                      <option value="red">Merah</option>
+                      <option value="orange">Oranye</option>
+                      <option value="yellow">Kuning</option>
+                      <option value="green">Hijau</option>
+                      <option value="blue">Biru</option>
+                      <option value="violet">Ungu</option>
+                      <option value="gray">Abu-abu</option>
+                      <option value="white">Putih</option>
+                  </select>
+              </div>
+  
+              <div>
+                  <label>Gelang 3:</label>
+                  <select id="gelang3-select">
+                      <option value="#ebdbcb">Pilih Gelang Ketiga (Pengali)</option>
+                      <option value="black">Hitam</option>
+                      <option value="brown">Coklat</option>
+                      <option value="red">Merah</option>
+                      <option value="orange">Oranye</option>
+                      <option value="yellow">Kuning</option>
+                      <option value="green">Hijau</option>
+                      <option value="blue">Biru</option>
+                      <option value="violet">Ungu</option>
+                      <option value="gray">Abu-abu</option>
+                      <option value="white">Putih</option>
+                  </select>
+              </div>
+  
+              <div>
+                  <label>Gelang 4:</label>
+                  <select id="gelang4-select">
+                      <option value="#ebdbcb">Pilih Gelang Keempat (Toleransi)</option>
+                      <option value="brown">Coklat (±1%)</option>
+                      <option value="red">Merah (±2%)</option>
+                      <option value="green">Hijau (±0.5%)</option>
+                      <option value="blue">Biru (±0.25%)</option>
+                      <option value="violet">Ungu (±0.1%)</option>
+                      <option value="gray">Abu-abu (±0.05%)</option>
+                      <option value="gold">Emas (±5%)</option>
+                      <option value="silver">Perak (±10%)</option>
+                  </select>
+              </div>
+          </div>
+          <div class="tombol">
+            <button id="calculate-btn">Hitung Resistansi</button>
+          </div>
+        <div id="result">
+          <h1 id="hasilResistor"></h1>
+        </div>
+        </div>
+       </section>
+    </div>
+    <!--PENGERTIAN-->
+    <section class="main2">
+      <div class="kalkulator">
+        <h1 class="autoShow">What Is Resistor?</h1>
+        <hr>
+        <p class="autoShow"><span><b>Apa itu resistor?</b></span></p>
+        <p class="autoShow">Resistor adalah sebuah alat elektronik yang berfungsi dalam menentukan nilai hambatan (Ω) dengan cara menghambat aliran arus listrik pada rangkaiannya. Kode warna resistor diimplementsikan ke dalam pita/gelang warna yang terdapat pada tubuh resistor. Setiap warna yang tertera mewakili suatu nilai tertentu. Pada resistor gelang 4 warna, gelang pertama dan kedua menunjukan nilai resitansi. Sementara gelang ketiga dan keempat berturur-turut menunjukan nilai pengali dan nilai toleransi.</p>
+        <p class="autoShow">Sedangkan kalkulator resistor warna adalah sebuah alat berupa perangkat lunak atau fisik yang dibuat untuk membantu penggunanya dalam menentukan nilai resistansi melalui kode warna yang tertera pada pita/gelang warna. Pita/gelang tersebut tertera pada tubuh kalkulator resistor.</p>
+        <br>
+      <hr>
+
+        <h1 class="autoShow"><span>How to Use</span> the Resistor Color Code Calculator?</h1> 
+         <br>
+        <p class="autoShow">Apakah kamu mengalami kesulitan membaca kode warna resistor? Jika jawabannya adalah ya, alat ini dirancang khusus untukmu! Kalkulator Kode Warna Resistor kami adalah alat yang berguna untuk membaca resistor berkomposisi karbon tipe 4 gelang.</p>
+        <p class="autoShow">Untuk menggunakan alat ini, cukup pilih warna tertentu perhatikan bagaimana pita pada ilustrasi resistor berubah. Nilai resistansi ditampilkan pada bagian bawah bersama dengan nilai toleransi.</p>
+        <br><h3>Kode untuk warna pada resistor:</h3>
+        <table>
+          <tr>
+              <th>Color</th>
+              <th>1<sup>st</sup>, 2<sup>nd</sup> Band Significant Figures</th>
+              <th>Multiplier</th>
+              <th>Tolerance</th>
+          </tr>
+          <tr>
+              <td><div class="color-box black"></div> Black</td>
+              <td>0</td>
+              <td>× 1</td>
+              <td>-</td>
+          </tr>
+          <tr>
+              <td><div class="color-box brown"></div> Brown</td>
+              <td>1</td>
+              <td>× 10</td>
+              <td>±1% (F)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box red"></div> Red</td>
+              <td>2</td>
+              <td>× 100</td>
+              <td>±2% (G)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box orange"></div> Orange</td>
+              <td>3</td>
+              <td>× 1K</td>
+              <td>±0.05% (W)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box yellow"></div> Yellow</td>
+              <td>4</td>
+              <td>× 10K</td>
+              <td>±0.02% (P)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box green"></div> Green</td>
+              <td>5</td>
+              <td>× 100K</td>
+              <td>±0.5% (D)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box blue"></div> Blue</td>
+              <td>6</td>
+              <td>× 1M</td>
+              <td>±0.25% (C)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box violet"></div> Violet</td>
+              <td>7</td>
+              <td>× 10M</td>
+              <td>±0.1% (B)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box grey"></div> Grey</td>
+              <td>8</td>
+              <td>× 100M</td>
+              <td>±0.01% (L)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box white"></div> White</td>
+              <td>9</td>
+              <td>× 1G</td>
+              <td>-</td>
+          </tr>
+          <tr>
+              <td><div class="color-box gold"></div> Gold</td>
+              <td>-</td>
+              <td>× 0.1</td>
+              <td>±5% (J)</td>
+          </tr>
+          <tr>
+              <td><div class="color-box silver"></div> Silver</td>
+              <td>-</td>
+              <td>× 0.01</td>
+              <td>±10% (K)</td>
+          </tr>
+          <tr>
+              <td>None</td>
+              <td>-</td>
+              <td>-</td>
+              <td>±20% (M)</td>
+          </tr>
+      </table>
+      </div>
+    </section>
+      <!--ABOUT-->
+      <section id="about" class="main2">
+        <div class="kalkulator">
+          <h1>About Us</h1>
+          <hr>
+          <div class="tujuan">
+            <div class="teks-tujuan">
+              <h2>Tujuan</h2>
+              <p>Tujuan dari pembuatan situs web kalkulator kode warna resistor adalah untuk memberikan platform yang mudah diakses pengguna, baik pemula maupun yang kompeten, dalam menentukan nilai resistansi resistor berdasarkan kode warna yang tertera pada permukaannya dengan cara yang efisien. Dengan website ini, pengguna tidak perlu lagi menghafal atau mencari tabel kode warna. Selain itu, layanan ini juga dapat diakses dari berbagai perangkat termasuk komputer desktop, tablet, dan smartphone yang memungkinkan pengguna untuk menentukan nilai resistor yang berbeda di mana saja dan kapan saja. Situs web ini berfungsi sebagai alat referensi yang efektif yang dapat meningkatkan akurasi pengguna dalam merakit dan merancang rangkaian elektronik.
+              </p>
+            </div>
+            <div class="gambar-tujuan">
+              <img src="/../project alpro/tujuan.svg" alt="">
+            </div>
+          </div>
+          <div class="manfaat">
+            <div class="teks-manfaat">
+              <h2>Manfaat</h2>
+              <p>Kalkulator warna resistor memiliki beberapa manfaat bagi bidang elektonika, website ini memberikan kemudahan bagi pengguna yang mendalami bidang elektronika untuk mengecek nilai resistor secara instan. Tidak perlu lagi membawa tabel referensi fisik atau melakukan perhitungan manual yang memakan waktu. Cukup dengan beberapa klik, pengguna dapat mengetahui nilai presisi resistor yang mereka butuhkan, kapan pun dan di mana pun melalui perangkat elektronik mereka. Website ini memberikan nilai keakuratan yang tinggi. Hal ini sangat krusial dalam merancang sirkuit elektronik yang membutuhkan presisi tinggi, di mana kesalahan kecil sekalipun dapat berdampak signifikan pada kinerja rangkaian. User interface yang sederhana memudahkan siapa pun untuk menggunakannya, sambil menghemat waktu dan tenaga dalam proses pengecekan dan perhitungan resistor.  </p>
+            </div>
+            <div class="gambar-manfaat">
+              <img src="/../project alpro/manfaat.svg" alt="">
+            </div>
+          </div>
+          <hr>
+          <h1 style="text-align: center; margin-bottom: 20px;">Our Team</h1>
+          <div class="about-card">
+              <div class="card">
+                <div class="card-info">
+                <div class="card-avatar"><img src="/../project alpro/mikel.png" alt=""></div>
+                <div class="card-title">Michael J.</div>
+                <div class="card-subtitle">
+                  <p>NIM: 2408328</p>
+                  <p>Teknik Elektro'24</p>
+                </div>
+                </div>
+                <ul class="card-social">
+                  <!--INSTAGRAM-->
+                <li class="card-social__item">
+                  <a target="_blank" href="https://www.instagram.com/mchljhncryy/"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            </li>
+                  <!--YOUTUBE-->
+              <li class="card-social__item">
+                <a target="_blank" href="https://youtube.com/@izzy-ee1te?si=Ps3HhXgayTJSnN9M"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+          </li>
+          <!--LINKEDIN-->
+            <li class="card-social__item">
+              <a target="_blank" href="https://www.linkedin.com/in/michaeljhoncary?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <div class="card-avatar"><img src="/../project alpro/salman.jpg" alt=""></div>
+            <div class="card-title">Salman</div>
+            <div class="card-subtitle">
+              <p>NIM: 2403559</p>
+              <p>Teknik Elektro'24</p>
+            </div>
+          </div>
+        <ul class="card-social">
+          <!--INSTAGRAM-->
+        <li class="card-social__item">
+          <a target="_blank" href="https://www.instagram.com/salman.mzkki?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+    </li>
+      <!--YOUTUBE-->
+      <li class="card-social__item">
+        <a target="_blank" href="https://youtube.com/@salmanmujaki3836?si=R6Dm5JJ9Q_KTiaJY"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+  </li>
+  <!--LINKEDIN-->
+    <li class="card-social__item">
+      <a target="_blank" href="https://id.linkedin.com/in/salman-al-muzakki-b0b76833b"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+      </svg></a>
+    </li>
+  </ul>
+</div>
+        <div class="card">
+        <div class="card-info">
+        <div class="card-avatar"><img src="/../project alpro/faishal.jpg" alt=""></div>
+        <div class="card-title">Faishal</div>
+        <div class="card-subtitle">
+          <p>NIM: 2409694</p>
+          <p>Teknik Elektro'24</p>
+        </div>
+        </div>
+        <ul class="card-social">
+          <!--INSTAGRAM-->
+        <li class="card-social__item">
+          <a target="_blank" href="https://www.instagram.com/faishalardian?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+            </svg>
+          </a>
+    </li>
+    <!--YOUTUBE-->
+      <li class="card-social__item">
+        <a target="_blank" href="https://www.youtube.com/@laaaahkokk"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+  </li>
+  <!--LINKEDIN-->
+    <li class="card-social__item">
+      <a target="_blank" href="https://id.linkedin.com/in/faishal-ardian-saputra-65382032a"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+      </svg></a>
+    </li>
+  </ul>
+</div>
+        </div>
+        <hr>
+        <div class="slogan">
+          <h1 class="slogan-text1 autoBlur">“ RESIS<span>COLOR</span></h1>
+          <h1 class="slogan-text2 autoBlur">DECODE</h1>
+          <h1 class="slogan-text3 autoBlur">RESISTANCE</h1>
+          <h1 class="slogan-text4 autoBlur">INSTANTLY +</h1>
+        </div>
+      </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-logo">Resiscolor.com</div>
+      <div class="social-links">
+        <ul class="social-list">
+          <li>
+            <a
+              href="mailto:teamresiscolor@example.com?subject=Hello&body=How are you?"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/6285855881633" class="social-link">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://maps.app.goo.gl/vRCW1S5Q7aiBQyjU6"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        Made by Official Team Resiscolor
+        <a href="https://colorlib.com" target="_blank" rel="noopener"
+          >Resiscolor.com</a
+        >
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
