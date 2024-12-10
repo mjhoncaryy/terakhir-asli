@@ -866,7 +866,7 @@ tr:hover {
   }
   .slogan h1 {
     color: rgb(51,53,55);
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: normal;
@@ -893,5 +893,8 @@ tr:hover {
   }
   .slogan-text4 {
     margin-left: 6rem;
+  }
+  #result h1 p {
+    font-size: 10px;
   }
 }
