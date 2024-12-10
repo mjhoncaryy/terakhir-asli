@@ -724,6 +724,11 @@ tr:hover {
   p {
     font-size: 14px;
   }
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 40%;
+  }
   .main1 .kalkulator h1 {
     text-align: center;
   }
@@ -806,9 +811,13 @@ tr:hover {
   .teks-tujuan h2, 
   .teks-manfaat h2 {
     font-size: 1.8rem;  
-     }   
-    .tujuan, .manfaat {
-      margin-bottom: 1rem;
+  }   
+  
+  .tujuan {
+    margin-top: 0;
+  }
+  .manfaat {
+    margin-bottom: 2rem;
   }
 
   .tujuan .teks-tujuan {
